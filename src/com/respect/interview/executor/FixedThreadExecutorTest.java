@@ -18,7 +18,7 @@ http://blog.csdn.net/qq_31753145/article/details/50899119
 
  * */
 
-public class fixedThreadExecutorTest{
+public class FixedThreadExecutorTest{
      
 
     public static void main(String[] args) {
