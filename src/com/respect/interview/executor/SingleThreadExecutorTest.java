@@ -7,6 +7,10 @@ import java.util.concurrent.Executors;
 import com.respect.interview.thread.MyThread;
 
 /*
+ * 创建一个单线程的线程池。这个线程池只有一个线程在工作，也就是相当于单线程串行执行所有任务。
+ * 如果这个唯一的线程因为异常结束，那么会有一个新的线程来替代它。
+ * 此线程池保证所有任务的执行顺序按照任务的提交顺序执行。
+ * 
  * 通过实现Runnable接口，实现多线程
  * Runnable类是有run()方法的；
  * 但是没有start方法
@@ -20,7 +24,6 @@ public class SingleThreadExecutorTest{
      
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
  
         //创建一个可重用固定线程数的线程池
         ExecutorService pool=Executors.newSingleThreadExecutor();
